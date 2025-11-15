@@ -80,6 +80,20 @@ Body utilizado:
 
 ---
 
+### **POST – Crear post**
+
+Body utilizado:
+
+```json
+{
+    "title": "Post de prueba QA",
+    "body": "Probando creación de posts con Postman",
+    "userId": 1
+}
+```
+
+---
+
 ### 🧪 Tests
 - **201 Created**
 - **Validación del título enviado**
@@ -92,7 +106,6 @@ Las capturas reales de ejecución se encuentran en la carpeta **evidencias/**.
 ---
 
 ### 🎯 Objetivo
-
 Este proyecto forma parte de mi formación como QA Tester, reforzando:
 
 - Pruebas sobre APIs REST  
