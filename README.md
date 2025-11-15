@@ -67,7 +67,8 @@ Body utilizado:
   "userId": 1
 }
 
-Tests:
+----
+##  Tests:
 - 201 Created
 - Validación del título enviado
 
