@@ -79,7 +79,6 @@ Body utilizado:
 ```
 
 ---
-
 ### **POST – Crear post**
 
 Body utilizado:
@@ -113,4 +112,3 @@ Este proyecto forma parte de mi formación como QA Tester, reforzando:
 - Automatización básica de validaciones  
 - Manejo de environments y variables  
 - Organización y estructuración profesional de colecciones  
-
