@@ -66,21 +66,38 @@ Body utilizado:
   "body": "Probando creación de posts con Postman",
   "userId": 1
 }
+### **POST – Crear post**
 
-----
-##  Tests:
-- 201 Created
-- Validación del título enviado
+Body utilizado:
 
-📸 Evidencias
-Las capturas reales de ejecución se encuentran en la carpeta evidencias/
+```json
+{
+    "title": "Post de prueba QA",
+    "body": "Probando creación de posts con Postman",
+    "userId": 1
+}
+```
 
-🎯 Objetivo
+---
+
+### 🧪 Tests
+- **201 Created**
+- **Validación del título enviado**
+
+---
+
+### 📸 Evidencias
+Las capturas reales de ejecución se encuentran en la carpeta **evidencias/**.
+
+---
+
+### 🎯 Objetivo
 
 Este proyecto forma parte de mi formación como QA Tester, reforzando:
-- Pruebas sobre APIs REST
-- Lectura e interpretación de respuestas JSON
-- Automatización básica de validaciones
-- Manejo de environments y variables
-- Organización y estructuración profesional de colecciones
+
+- Pruebas sobre APIs REST  
+- Lectura e interpretación de respuestas JSON  
+- Automatización básica de validaciones  
+- Manejo de environments y variables  
+- Organización y estructuración profesional de colecciones  
 
