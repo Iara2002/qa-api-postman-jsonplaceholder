@@ -56,29 +56,6 @@ Tests:
 - Propiedades `title` y `body` presentes  
 
 ---
-
-### 🔹 **POST – Crear post**
-Body utilizado:
-
-```json
-{
-  "title": "Post de prueba QA",
-  "body": "Probando creación de posts con Postman",
-  "userId": 1
-}
-### **POST – Crear post**
-
-Body utilizado:
-
-```json
-{
-    "title": "Post de prueba QA",
-    "body": "Probando creación de posts con Postman",
-    "userId": 1
-}
-```
-
----
 ### **POST – Crear post**
 
 Body utilizado:
