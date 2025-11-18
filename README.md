@@ -67,6 +67,15 @@ Body utilizado:
     "userId": 1
 }
 ```
+### 🔹 GET – Obtener post usando ID almacenado
+Flujo:
+1. El request `POST /posts` crea un post y guarda el `id_creado` en el environment.
+2. El request `GET /posts/{{id_creado}}` usa esa variable para consultar ese ID.
+
+Tests:
+- Status code 200 o 404 (según comportamiento de la API mock).
+- La respuesta devuelve un body válido (aunque sea vacío).
+
 
 ---
 
