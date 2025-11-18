@@ -14,16 +14,17 @@ Incluye:
 ---
 
 ## 📁 Contenido del repositorio
-
 collection/
-API-Demo-JSONPlaceholder.postman_collection.json
+└── API-Demo-JSONPlaceholder.postman_collection.json
 
 environment/
-JSONPlaceholder-Dev.postman_environment.json
+└── JSONPlaceholder-Dev.postman_environment.json
 
 evidencias/
-test_listar_posts.png
-test_crear_post.png
+├── test_listar_posts.png
+├── test_crear_post.png
+├── test_actualizar_post.png (si querés agregar)
+└── test_get_por_id_encadenado.png
 
 ---
 
@@ -56,30 +57,49 @@ Tests:
 - Propiedades `title` y `body` presentes  
 
 ---
+### **POST – Crear post**
 
-### 🔹 **POST – Crear post**
 Body utilizado:
 
 ```json
 {
-  "title": "Post de prueba QA",
-  "body": "Probando creación de posts con Postman",
-  "userId": 1
+    "title": "Post de prueba QA",
+    "body": "Probando creación de posts con Postman",
+    "userId": 1
 }
+```
+### 🔹 GET – Obtener post usando ID almacenado
+Flujo:
+1. El request `POST /posts` crea un post y guarda el `id_creado` en el environment.
+2. El request `GET /posts/{{id_creado}}` usa esa variable para consultar ese ID.
 
 Tests:
-- 201 Created
-- Validación del título enviado
+- Status code 200 o 404 (según comportamiento de la API mock).
+- La respuesta devuelve un body válido (aunque sea vacío).
 
-📸 Evidencias
-Las capturas reales de ejecución se encuentran en la carpeta evidencias/
+### 🔹 PUT – Actualizar post
+Tests:
+- Código 200 0 204.
+- Respuesta vacía o mínima ({}, " ")
+---
 
-🎯 Objetivo
+### 🧪 Tests
+- **201 Created**
+- **Validación del título enviado**
 
+---
+
+### 📸 Evidencias
+Las capturas reales de ejecución se encuentran en la carpeta **evidencias/**.
+
+---
+
+### 🎯 Objetivo
 Este proyecto forma parte de mi formación como QA Tester, reforzando:
-- Pruebas sobre APIs REST
-- Lectura e interpretación de respuestas JSON
-- Automatización básica de validaciones
-- Manejo de environments y variables
-- Organización y estructuración profesional de colecciones
 
+- Testing de APIs REST
+- Lectura y validación de respuestas JSON
+- Automatización de tests dentro de Postman
+- Manejo de variables y environments
+- Encadenamiento de requests
+- Organización profesional de una colección de pruebas
