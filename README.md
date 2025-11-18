@@ -14,16 +14,17 @@ Incluye:
 ---
 
 ## 📁 Contenido del repositorio
-
 collection/
-API-Demo-JSONPlaceholder.postman_collection.json
+└── API-Demo-JSONPlaceholder.postman_collection.json
 
 environment/
-JSONPlaceholder-Dev.postman_environment.json
+└── JSONPlaceholder-Dev.postman_environment.json
 
 evidencias/
-test_listar_posts.png
-test_crear_post.png
+├── test_listar_posts.png
+├── test_crear_post.png
+├── test_actualizar_post.png (si querés agregar)
+└── test_get_por_id_encadenado.png
 
 ---
 
@@ -76,7 +77,10 @@ Tests:
 - Status code 200 o 404 (según comportamiento de la API mock).
 - La respuesta devuelve un body válido (aunque sea vacío).
 
-
+### 🔹 PUT – Actualizar post
+Tests:
+- Código 200 0 204.
+- Respuesta vacía o mínima ({}, " ")
 ---
 
 ### 🧪 Tests
@@ -93,8 +97,9 @@ Las capturas reales de ejecución se encuentran en la carpeta **evidencias/**.
 ### 🎯 Objetivo
 Este proyecto forma parte de mi formación como QA Tester, reforzando:
 
-- Pruebas sobre APIs REST  
-- Lectura e interpretación de respuestas JSON  
-- Automatización básica de validaciones  
-- Manejo de environments y variables  
-- Organización y estructuración profesional de colecciones  
+- Testing de APIs REST
+- Lectura y validación de respuestas JSON
+- Automatización de tests dentro de Postman
+- Manejo de variables y environments
+- Encadenamiento de requests
+- Organización profesional de una colección de pruebas
